@@ -8,14 +8,13 @@ A rover's position and location is represented by a combination of x and y co-or
 .Net Core 3.1, NUnit 3.12 
 
 ### Tests
-
-Input and Output
-Test Input:
+Test Input
 5 5
 1 2 N
 LMLMLMLMM
 3 3 E
 MMRMMRMRRM
-Expected Output:
+
+Expected Output
 1 3 N
 5 1 E
