@@ -10,43 +10,20 @@ namespace MarsRoverNavigator.Entity
         public Position RoverPositon { get; set;} 
 
         private void TurnRight() {
-            switch (this.RoverPositon.Direction)
-            {
-                case Directions.N:
-                    this.RoverPositon.Direction = Directions.E;
-                    break;
-                case Directions.S:
-                    this.RoverPositon.Direction = Directions.W;
-                    break;
-                case Directions.E:
-                    this.RoverPositon.Direction = Directions.S;
-                    break;
-                case Directions.W:
-                    this.RoverPositon.Direction = Directions.N;
-                    break;
-                default:
-                    break;
-            }
+
+           int nextDirection =  ((int)(this.RoverPositon.Direction) + 1) %4;
+
+           this.RoverPositon.Direction =  (Directions)(nextDirection);
         }
         private void TurnLeft() {
 
-            switch (this.RoverPositon.Direction)
-            {
-                case Directions.N:
-                    this.RoverPositon.Direction = Directions.W;
-                    break;
-                case Directions.S:
-                    this.RoverPositon.Direction = Directions.E;
-                    break;
-                case Directions.E:
-                    this.RoverPositon.Direction = Directions.N;
-                    break;
-                case Directions.W:
-                    this.RoverPositon.Direction = Directions.S;
-                    break;
-                default:
-                    break;
-            }
+            int nextDirection = ((int)(this.RoverPositon.Direction) -1);
+              
+
+            this.RoverPositon.Direction =
+                 (Directions)(nextDirection < 0  ? nextDirection + 4 : nextDirection );
+
+ 
         }
 
         private void MoveForward(int maxX, int maxY) {

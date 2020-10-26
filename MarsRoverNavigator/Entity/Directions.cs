@@ -6,9 +6,9 @@ namespace MarsRoverNavigator.Entity
 {
     public enum Directions
     {
+        W = 0,  // West
         N = 1,  // North
-        S = 2,  // South
-        E = 3,  // East
-        W = 4   // West
+        E = 2,  // East
+        S = 3   // South
     }
 }
