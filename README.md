@@ -11,10 +11,13 @@ C#, .Net Core 3.1, NUnit 3.12 with Visual Studio 2019
 Test Input
 
 5 5
+
 1 2 N
+
 LMLMLMLMM
 
 3 3 E
+
 MMRMMRMRRM
 
 Expected Output
