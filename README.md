@@ -10,10 +10,10 @@ A rover's position and location is represented by a combination of x and y co-or
 ### Tests
 
 Input and Output
-Test Input: 
+Test Input:
 5 5
 1 2 N
-LMLMLMLMM 
+LMLMLMLMM
 3 3 E
 MMRMMRMRRM
 Expected Output:
