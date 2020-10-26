@@ -118,10 +118,10 @@ namespace MarsRoverNavigator.Tests
                 Position secondPosition = curPositionList[1];
 
                 string actualOutput =
-                $"{firstPosition.Coordinate.X} {firstPosition.Coordinate.Y} {firstPosition.Direction.ToString()}\\n" +
+                $"{firstPosition.Coordinate.X} {firstPosition.Coordinate.Y} {firstPosition.Direction.ToString()} " +
                 $"{secondPosition.Coordinate.X} {secondPosition.Coordinate.Y} {secondPosition.Direction.ToString()}";
 
-                string expectedOutput = @"1 3 N\n5 1 E";
+                string expectedOutput = @"1 3 N 5 1 E";
 
                 Assert.AreEqual(expectedOutput, actualOutput);
             }
