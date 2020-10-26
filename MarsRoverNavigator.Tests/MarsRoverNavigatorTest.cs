@@ -21,7 +21,7 @@ namespace MarsRoverNavigator.Tests
                 Coordinate = new Coordinates { X = 1, Y = 2 },
                 Direction = Directions.N
             };
-            MarsRover rover = new MarsRover() { RoverPositon = position };
+            MarsRover rover = new MarsRover(position);
             string moves = "LMLMLMLMM";
 
             NasaMarsRoverController controller = new NasaMarsRoverController()
@@ -55,7 +55,7 @@ namespace MarsRoverNavigator.Tests
                 Coordinate = new Coordinates { X = 3, Y = 3},
                 Direction = Directions.E
             };
-            MarsRover rover = new MarsRover() { RoverPositon = position };
+            MarsRover rover = new MarsRover(position);
             string moves = "MMRMMRMRRM";
 
             NasaMarsRoverController controller = new NasaMarsRoverController()
@@ -90,7 +90,7 @@ namespace MarsRoverNavigator.Tests
                 Coordinate = new Coordinates { X = 1, Y = 2 },
                 Direction = Directions.N
             };
-            MarsRover roverFirst = new MarsRover() { RoverPositon = positionFirst };
+            MarsRover roverFirst = new MarsRover(positionFirst);
             string movesFirst = "LMLMLMLMM";
 
             Position positionSecond = new Position()
@@ -98,7 +98,7 @@ namespace MarsRoverNavigator.Tests
                 Coordinate = new Coordinates { X = 3, Y = 3 },
                 Direction = Directions.E
             };
-            MarsRover roverSecond = new MarsRover() { RoverPositon = positionSecond };
+            MarsRover roverSecond = new MarsRover(positionSecond);
             string movesSecond = "MMRMMRMRRM";
 
 

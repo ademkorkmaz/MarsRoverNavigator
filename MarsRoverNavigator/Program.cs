@@ -33,7 +33,7 @@ namespace MarsRoverNavigator
             }
 
             var movesFirst = Console.ReadLine().ToUpper();
-            MarsRover roverFirst = new MarsRover() { RoverPositon = positionFirst };
+            MarsRover roverFirst = new MarsRover(positionFirst);
 
             string[] startPosSecond = Console.ReadLine().Trim().Split(' ');
             Position positionSecond = null; ;
@@ -51,7 +51,7 @@ namespace MarsRoverNavigator
                 };
             }
 
-            MarsRover roverSecond = new MarsRover() { RoverPositon = positionSecond };
+            MarsRover roverSecond = new MarsRover(positionSecond);
             var movesSecond = Console.ReadLine().ToUpper();
 
             try
