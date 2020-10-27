@@ -8,6 +8,10 @@ namespace MarsRoverNavigator.Operation
 {
     public class NasaMarsRoverController
     {
+        /*The is is the main object that controlles roves on mars plateau, 
+          and returns final positions of Rovers.
+        */
+
         public Plateau MarsPlateau { get; set; }
 
         public  List<MarsRover> MarsRoverList { get; set; }

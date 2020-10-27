@@ -1,13 +1,15 @@
 ﻿using MarsRoverNavigator.Interface;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+ 
 
 namespace MarsRoverNavigator.Entity
 {
     public class MarsRover : IMarsRover
     {
+        /* This is for Nasa Mars Rover object,
+         * It has rover postion and navigation functions.
+         */
+
         public Position RoverPositon { get; }
         public MarsRover(Position position)
         {
@@ -30,7 +32,6 @@ namespace MarsRoverNavigator.Entity
             this.RoverPositon.Direction =
                  (Directions)(nextDirection < 0 ? nextDirection + 4 : nextDirection);
 
-
         }
 
         private void MoveForward(int maxX, int maxY)
@@ -41,23 +42,23 @@ namespace MarsRoverNavigator.Entity
                 case Directions.N:
                     this.RoverPositon.Coordinate.Y += 1;
                     if (this.RoverPositon.Coordinate.Y > maxX)
-                        throw new Exception("Rover reached limits the plateau");
+                        throw new Exception("Rover reached limits the plateau On Y axis");
                     break;
                 case Directions.S:
                     this.RoverPositon.Coordinate.Y -= 1;
                     if (this.RoverPositon.Coordinate.Y < 0)
-                        throw new Exception("Rover reached limits the plateau");
+                        throw new Exception("Rover reached limits the plateau  On Y axis");
                     break;
                 case Directions.E:
                     this.RoverPositon.Coordinate.X += 1;
                     if (this.RoverPositon.Coordinate.X > maxY)
-                        throw new Exception("Rover reached limits the plateau");
+                        throw new Exception("Rover reached limits the plateau  On X axis");
                     break;
                 case Directions.W:
                     this.RoverPositon.Coordinate.X -= 1;
                     if (this.RoverPositon.Coordinate.X < 0)
                     {
-                        throw new Exception("Rover reached limits the plateau");
+                        throw new Exception("Rover reached limits the plateau  On X axis");
                     }
                     break;
                 default:

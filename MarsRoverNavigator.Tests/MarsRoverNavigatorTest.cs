@@ -6,12 +6,7 @@ using System.Collections.Generic;
 namespace MarsRoverNavigator.Tests
 {
     public class MarsRoverNavigatorTest
-    {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
+    {  
         [Test]   
         public void TestScenarioFirstRover()
         {
@@ -81,7 +76,7 @@ namespace MarsRoverNavigator.Tests
 
 
         [Test]
-        public void TestScenarioMultiple()
+        public void TestScenarioMultipleRovers()
         {
             Plateau plateau = new Plateau() { MaxX = 5, MaxY = 5 };
 

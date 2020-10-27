@@ -10,7 +10,9 @@ namespace MarsRoverNavigator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Mars Rover Navigator Program...");
+            Console.WriteLine("Mars Rover Navigator Program..");
+            Console.WriteLine("You can enter Test Input..");
+
             List<int> maxPlatauePoints =
                 Console.ReadLine().Trim().Split(' ').Select(int.Parse).ToList();
             Plateau plateau = new Plateau() { MaxX = maxPlatauePoints[0], MaxY = maxPlatauePoints[1] };
@@ -32,11 +34,11 @@ namespace MarsRoverNavigator
     
             }
 
-            var movesFirst = Console.ReadLine().ToUpper();
+            string movesFirst = Console.ReadLine().ToUpper();
             MarsRover roverFirst = new MarsRover(positionFirst);
 
             string[] startPosSecond = Console.ReadLine().Trim().Split(' ');
-            Position positionSecond = null; ;
+            Position positionSecond = null;
 
             if (startPosSecond.Count() == 3)
             {
@@ -52,7 +54,7 @@ namespace MarsRoverNavigator
             }
 
             MarsRover roverSecond = new MarsRover(positionSecond);
-            var movesSecond = Console.ReadLine().ToUpper();
+            string movesSecond = Console.ReadLine().ToUpper();
 
             try
             {
