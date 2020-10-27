@@ -2,7 +2,8 @@
 This project is about navigation Robotic Rovers landed by NASA on a rectangle Plateau.
 
 ## Overview
-A rover's position and location is represented by a combination of x and y co-ordinates and a letter representing one of the four cardinal compass points. The plateau is divided up into a grid to simplify navigation. An example position might be 0, 0, N, which means the rover is in the bottom left corner and facing North.
+The Solution has two projects. First one is a console application which does the core navigation operations and the other one is a Unit Test application.
+In ths project a rover's position and location is represented by a combination of x and y co-ordinates and a letter representing one of the four cardinal compass points. The plateau is divided up into a grid to simplify navigation. An example position might be 0, 0, N, which means the rover is in the bottom left corner and facing North.
 
 ### Built With
 C#, .Net Core 3.1, NUnit 3.12 with Visual Studio 2019  
@@ -16,6 +17,8 @@ Each rover will be finished sequentially, which means that the second rover won'
 The output for each rover should be its final co-ordinates and heading.
 
 ### Tests
+You can run the unit tests in the test application also you can test in the console application as follows.
+
 Test Input
 
 5 5
