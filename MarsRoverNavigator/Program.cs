@@ -20,7 +20,7 @@ namespace MarsRoverNavigator
             string[] startPosFirst = Console.ReadLine().Trim().Split(' ');
             Position positionFirst = null;
 
-            if (startPosFirst.Count() == 3)
+            if (startPosFirst != null && startPosFirst.Length == 3)
             {
                  positionFirst = new Position()
                 {
@@ -40,7 +40,7 @@ namespace MarsRoverNavigator
             string[] startPosSecond = Console.ReadLine().Trim().Split(' ');
             Position positionSecond = null;
 
-            if (startPosSecond.Count() == 3)
+            if (startPosSecond != null && startPosSecond.Length == 3)
             {
                 positionSecond = new Position()
                 {
